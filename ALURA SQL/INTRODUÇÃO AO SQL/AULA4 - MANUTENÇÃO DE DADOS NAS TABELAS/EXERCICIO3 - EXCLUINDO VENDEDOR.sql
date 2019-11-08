@@ -1,0 +1,3 @@
+USE SUCOS;
+
+DELETE FROM tbvendedores WHERE MATRICULA = '00233';

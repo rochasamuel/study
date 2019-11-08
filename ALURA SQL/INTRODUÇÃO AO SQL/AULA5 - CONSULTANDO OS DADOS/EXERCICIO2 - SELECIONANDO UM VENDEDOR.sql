@@ -1,0 +1,3 @@
+USE SUCOS;
+
+SELECT * FROM TBVENDEDORES WHERE NOME = 'Cláudia Morais';		
