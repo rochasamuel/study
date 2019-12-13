@@ -13,6 +13,10 @@ $(function () {
     campo.removeClass("borda-verde");
 });
 
+function atualizaTempoInicial(tempo) {
+    tempoInicial = tempo;
+    $("#tempo-digitacao").text(tempo);
+}
 
 //Nº PALAVRAS DA FRASE
 function atualizaPalavras() {
@@ -35,8 +39,8 @@ function incializaContadores() {
 
 //CRONOMETRO
 function inicializaCronometro() {
-    var tempo = $("#tempo-digitacao").text();
     campo.one("focus", function () {
+        var tempo = $("#tempo-digitacao").text();
         $("#botao-reiniciar").attr("disabled", true);
         var id = setInterval(function () {
             tempo--;
@@ -66,9 +70,8 @@ function reiniciaJogo() {
 
 //MARCADORES DE BORDA
 function inicializaMarcadores() {
-    var frase = $(".frase").text();
-
     campo.on("input", function () {
+        var frase = $(".frase").text();
         var digitado = campo.val();
         var comparavel = frase.substr(0, digitado.length);
         if (digitado == comparavel) {
