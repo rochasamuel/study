@@ -5,3 +5,38 @@
 2020-01-03 15:02:29,171 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
 2020-01-03 16:53:55,091 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
 2020-01-06 13:25:07,005 [Worker-11: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2020-01-06 16:09:36,533 [Worker-12: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2020-01-06 16:10:52,618 [Worker-10: Auto share git projects] ERROR org.eclipse.jgit.util.SystemReader - Creating XDG_CONFIG_HOME directory F:\.config failed
+java.nio.file.FileSystemException: F:\.config: Unable to determine if root directory exists
+	at java.base/java.nio.file.Files.createDirectories(Files.java:775) ~[na:na]
+	at org.eclipse.jgit.util.SystemReader$Default.getXDGConfigHome(SystemReader.java:153) ~[na:na]
+	at org.eclipse.jgit.util.SystemReader$Default.openJGitConfig(SystemReader.java:164) ~[na:na]
+	at org.eclipse.jgit.util.SystemReader.getJGitConfig(SystemReader.java:381) ~[na:na]
+	at org.eclipse.jgit.util.SystemReader.getSystemConfig(SystemReader.java:406) ~[na:na]
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:354) ~[na:na]
+	at org.eclipse.egit.core.Activator$EclipseSystemReader.getUserConfig(Activator.java:1177) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.FileRepository.<init>(FileRepository.java:191) ~[na:na]
+	at org.eclipse.egit.core.CachingRepository.<init>(CachingRepository.java:40) ~[na:na]
+	at org.eclipse.egit.core.RepositoryCache$Builder.createRepository(RepositoryCache.java:211) ~[na:na]
+	at org.eclipse.egit.core.RepositoryCache.lookupRepository(RepositoryCache.java:142) ~[na:na]
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:692) ~[na:na]
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:650) ~[na:na]
+	at org.eclipse.egit.core.project.GitProjectData.setRepositoryMappings(GitProjectData.java:464) ~[na:na]
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:153) ~[na:na]
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:111) ~[na:na]
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:55) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.10.600.v20191122-2104.jar:na]
+2020-01-06 16:10:56,574 [ForkJoinPool.commonPool-worker-3] ERROR org.eclipse.jgit.util.FS - Cannot save config file 'FileBasedConfig[F:\.jgitconfig]'
+java.io.IOException: Creating directories for F:\ failed
+	at org.eclipse.jgit.util.FileUtils.mkdirs(FileUtils.java:428) ~[na:na]
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:163) ~[na:na]
+	at org.eclipse.jgit.storage.file.FileBasedConfig.save(FileBasedConfig.java:252) ~[na:na]
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.saveToConfig(FS.java:586) ~[na:na]
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.lambda$0(FS.java:367) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1763) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[na:na]

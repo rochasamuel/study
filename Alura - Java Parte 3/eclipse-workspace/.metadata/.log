@@ -1038,3 +1038,114 @@ java.net.SocketException: Connection reset
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:246)
 	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2020-01-06 16:09:21.096 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=13.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -data C:\Users\t1090440\Desktop\git\study\Alura - Java Parte 3\eclipse-workspace -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2020-01-06 16:09:22.840
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.307
+!MESSAGE System property http.proxyHost is not set but should be localhost.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.312
+!MESSAGE System property http.proxyPort is not set but should be 40080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.317
+!MESSAGE System property https.proxyHost is not set but should be localhost.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.319
+!MESSAGE System property https.proxyPort is not set but should be 40080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.323
+!MESSAGE System property socksProxyHost is not set but should be localhost.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.325
+!MESSAGE System property socksProxyPort is not set but should be 40080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.334
+!MESSAGE System property https.proxyHost is not set but should be localhost.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.335
+!MESSAGE System property https.proxyPort is not set but should be 40080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.337
+!MESSAGE System property socksProxyHost is not set but should be localhost.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.341
+!MESSAGE System property socksProxyPort is not set but should be 40080.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.349
+!MESSAGE System property socksProxyHost is not set but should be localhost.
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-06 16:09:24.351
+!MESSAGE System property socksProxyPort is not set but should be 40080.
+
+!ENTRY org.eclipse.buildship.core 2 0 2020-01-06 16:09:37.141
+!MESSAGE Could not load Gradle version information
+!STACK 0
+org.gradle.api.UncheckedIOException: Cannot download published Gradle versions.
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:165)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.tryToDownloadAndCacheVersions(PublishedGradleVersions.java:149)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.create(PublishedGradleVersions.java:109)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob.run(PublishedGradleVersionsWrapper.java:60)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Unable to tunnel through proxy. Proxy returns "HTTP/1.1 407 Proxy Authentication Required"
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.doTunneling(HttpURLConnection.java:2172)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:169)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1515)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:162)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-01-06 16:09:37.333
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'F:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-06 16:10:52.629
+!MESSAGE Creating XDG_CONFIG_HOME directory F:\.config failed
+!STACK 0
+java.nio.file.FileSystemException: F:\.config: Unable to determine if root directory exists
+	at java.base/java.nio.file.Files.createDirectories(Files.java:775)
+	at org.eclipse.jgit.util.SystemReader$Default.getXDGConfigHome(SystemReader.java:153)
+	at org.eclipse.jgit.util.SystemReader$Default.openJGitConfig(SystemReader.java:164)
+	at org.eclipse.jgit.util.SystemReader.getJGitConfig(SystemReader.java:381)
+	at org.eclipse.jgit.util.SystemReader.getSystemConfig(SystemReader.java:406)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:354)
+	at org.eclipse.egit.core.Activator$EclipseSystemReader.getUserConfig(Activator.java:1177)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.<init>(FileRepository.java:191)
+	at org.eclipse.egit.core.CachingRepository.<init>(CachingRepository.java:40)
+	at org.eclipse.egit.core.RepositoryCache$Builder.createRepository(RepositoryCache.java:211)
+	at org.eclipse.egit.core.RepositoryCache.lookupRepository(RepositoryCache.java:142)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:692)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:650)
+	at org.eclipse.egit.core.project.GitProjectData.setRepositoryMappings(GitProjectData.java:464)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.connectProject(ConnectProviderOperation.java:153)
+	at org.eclipse.egit.core.op.ConnectProviderOperation.execute(ConnectProviderOperation.java:111)
+	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-01-06 16:10:56.575
+!MESSAGE Cannot save config file 'FileBasedConfig[F:\.jgitconfig]'
+!STACK 0
+java.io.IOException: Creating directories for F:\ failed
+	at org.eclipse.jgit.util.FileUtils.mkdirs(FileUtils.java:428)
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:163)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.save(FileBasedConfig.java:252)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.saveToConfig(FS.java:586)
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.lambda$0(FS.java:367)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1771)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1763)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:290)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177)
