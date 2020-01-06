@@ -1,0 +1,11 @@
+
+public class TesteContaComposta {
+	public static void main(String[] args) {
+		Conta contaDoSamuel = new Conta();
+		
+		contaDoSamuel.titular = new Cliente();
+		contaDoSamuel.titular.nome = "Samuel Rocha";
+				
+		System.out.println(contaDoSamuel.titular.nome);
+	}
+}
