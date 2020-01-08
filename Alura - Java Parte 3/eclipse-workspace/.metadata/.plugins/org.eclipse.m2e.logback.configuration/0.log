@@ -40,3 +40,35 @@ java.io.IOException: Creating directories for F:\ failed
 	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665) ~[na:na]
 	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598) ~[na:na]
 	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:177) ~[na:na]
+2020-01-07 14:41:53,432 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2020-01-07 14:41:59,818 [ForkJoinPool.commonPool-worker-1] ERROR o.e.j.i.storage.file.LockFile - Creating lock file F:\.config\jgit\config.lock failed
+java.io.IOException: Acesso negado
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method) ~[na:1.8.0_144]
+	at java.io.File.createNewFile(Unknown Source) ~[na:1.8.0_144]
+	at org.eclipse.jgit.util.FS.createNewFileAtomic(FS.java:1589) ~[org.eclipse.jgit_5.6.0.201912101111-r.jar:5.6.0.201912101111-r]
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:165) ~[org.eclipse.jgit_5.6.0.201912101111-r.jar:5.6.0.201912101111-r]
+	at org.eclipse.jgit.storage.file.FileBasedConfig.save(FileBasedConfig.java:252) [org.eclipse.jgit_5.6.0.201912101111-r.jar:5.6.0.201912101111-r]
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.saveToConfig(FS.java:586) [org.eclipse.jgit_5.6.0.201912101111-r.jar:5.6.0.201912101111-r]
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.lambda$0(FS.java:367) [org.eclipse.jgit_5.6.0.201912101111-r.jar:5.6.0.201912101111-r]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source) ~[na:1.8.0_144]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source) ~[na:1.8.0_144]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[na:1.8.0_144]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) ~[na:1.8.0_144]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) ~[na:1.8.0_144]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) ~[na:1.8.0_144]
+2020-01-07 14:41:59,834 [ForkJoinPool.commonPool-worker-1] ERROR org.eclipse.jgit.util.FS - Cannot save config file 'FileBasedConfig[F:\.config\jgit\config]'
+java.io.IOException: Acesso negado
+	at java.io.WinNTFileSystem.createFileExclusively(Native Method) ~[na:1.8.0_144]
+	at java.io.File.createNewFile(Unknown Source) ~[na:1.8.0_144]
+	at org.eclipse.jgit.util.FS.createNewFileAtomic(FS.java:1589) ~[org.eclipse.jgit_5.6.0.201912101111-r.jar:5.6.0.201912101111-r]
+	at org.eclipse.jgit.internal.storage.file.LockFile.lock(LockFile.java:165) ~[org.eclipse.jgit_5.6.0.201912101111-r.jar:5.6.0.201912101111-r]
+	at org.eclipse.jgit.storage.file.FileBasedConfig.save(FileBasedConfig.java:252) ~[org.eclipse.jgit_5.6.0.201912101111-r.jar:5.6.0.201912101111-r]
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.saveToConfig(FS.java:586) [org.eclipse.jgit_5.6.0.201912101111-r.jar:5.6.0.201912101111-r]
+	at org.eclipse.jgit.util.FS$FileStoreAttributes.lambda$0(FS.java:367) [org.eclipse.jgit_5.6.0.201912101111-r.jar:5.6.0.201912101111-r]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(Unknown Source) ~[na:1.8.0_144]
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(Unknown Source) ~[na:1.8.0_144]
+	at java.util.concurrent.ForkJoinTask.doExec(Unknown Source) ~[na:1.8.0_144]
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(Unknown Source) ~[na:1.8.0_144]
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source) ~[na:1.8.0_144]
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source) ~[na:1.8.0_144]
+2020-01-08 14:16:16,585 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.

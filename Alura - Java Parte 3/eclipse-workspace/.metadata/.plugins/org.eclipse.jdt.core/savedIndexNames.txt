@@ -1,2 +1,1 @@
 INDEX VERSION 1.131+C:\Users\t1090440\Desktop\git\study\Alura - Java Parte 3\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
-1557630702.index

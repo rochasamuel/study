@@ -9,7 +9,7 @@ public class TesteGerente {
 		cristiano.setSalario(6000.00);
 		
 		System.out.println(cristiano.getNome());
-		System.out.println(cristiano.getBonififcacao());
+		System.out.println(cristiano.getBonificacao());
 		
 		cristiano.setSenha(01010011);
 		
