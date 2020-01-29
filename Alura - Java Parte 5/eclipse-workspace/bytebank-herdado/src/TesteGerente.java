@@ -1,20 +1,26 @@
 
 public class TesteGerente {
-	
+
 	public static void main(String[] args) {
-		Gerente cristiano = new Gerente();
 		
-		cristiano.setNome("Cristiano Leiva");
-		cristiano.setCpf("555.555.555-55");
-		cristiano.setSalario(6000.00);
+		Autenticavel referencia = new Cliente();
 		
-		System.out.println(cristiano.getNome());
-		System.out.println(cristiano.getBonificacao());
+		Gerente g1 = new Gerente();
+		g1.setNome("Marco");
+		g1.setCpf("235568413");
+		g1.setSalario(5000.0);
 		
-		cristiano.setSenha(01010011);
+		System.out.println(g1.getNome());
+		System.out.println(g1.getCpf());
+		System.out.println(g1.getSalario());
 		
-		boolean autenticou = cristiano.autentica(01010011);
+		g1.setSenha(2222);
+		boolean autenticou = g1.autentica(2222);
+		
 		System.out.println(autenticou);
 		
+		System.out.println(g1.getBonificacao());
+
 	}
+
 }

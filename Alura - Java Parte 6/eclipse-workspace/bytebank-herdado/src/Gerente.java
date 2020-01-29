@@ -1,11 +1,15 @@
-
-public class Gerente extends Funcionario implements Autenticavel {
+//Gerente eh um Funcionario, Gerente herda da class Funcionario, assina o contrato Autenticavel, eh um Autenticavel
+public class Gerente extends Funcionario implements Autenticavel{
 	
 	private AutenticacaoUtil autenticador;
 
 	public Gerente() {
-		
 		this.autenticador = new AutenticacaoUtil();
+	}
+	
+	public double getBonificacao() {
+		System.out.println("Chamando o m√©todo de bonificacao do GERENTE");
+		return super.getSalario();
 	}
 
 	@Override
@@ -18,7 +22,4 @@ public class Gerente extends Funcionario implements Autenticavel {
 		return this.autenticador.autentica(senha);
 	}
 
-	public double getBonificacao() {
-		return super.getSalario(); // [super] significa que o atributo est· na classe m„e
-	}
 }

@@ -1,10 +1,12 @@
-//classe abstrata não pode ser instanciada
+
+//nao pode instanciar dessa classe, pq Ã© abstrata
 public abstract class Funcionario {
+	
 	private String nome;
 	private String cpf;
 	private double salario;
 	
-	//metodo abstrato não possui implementação na classe abstrata [mae] somente nas filhas
+	//metodo sem corpo, nao hÃ¡ implementacao
 	public abstract double getBonificacao();
 	
 	public String getNome() {
@@ -27,4 +29,6 @@ public abstract class Funcionario {
 	}
 	
 	
+	
+
 }
