@@ -49,7 +49,7 @@ public class TesteSortByNome {
         }
 
 //        lista.sort(new NomeDaContaComparator());
-        Collections.sort(lista);
+        Collections.sort(lista); //Usa o metodo compareTo sobreescrevido na classe Conta principal;
 
         System.out.println("------------");
 
@@ -62,7 +62,6 @@ public class TesteSortByNome {
 }
 
 class NomeDaContaComparator implements Comparator<Conta> {
-
 
         @Override
         public int compare(Conta c1, Conta c2) {
